@@ -2,8 +2,20 @@ function getComputerChoice(){
     return Math.floor((Math.random() * 3) + 1);
 }
 
+function turnNumberToString(computerSelection){
+    if (computerSelection === 1) {
+        return 'rock';
+    } else if (string === 2){
+        return 'paper';
+    } else if (string === 3){
+        return 'scissors';
+    }
+}
+
 function playRound(playerSelection, computerSelection){
-    console.log("Proceed to game.");
+    if (playerSelection === computerSelection){
+        console.log("You lost! The computer chose Paper. \n Paper beats Rock");  
+    }
     return
 }
 
@@ -24,5 +36,5 @@ function game(){
 
 const computerSelection = getComputerChoice();
 let playerSelection = 'rock';
-game();
+game();  
 
