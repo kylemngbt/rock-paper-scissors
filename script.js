@@ -11,16 +11,23 @@ function getComputerChoice(){
     }
 }
 
-function playRound(playerSelection, computerSelection){
+function rockResult(playerSelection, computerSelection){
     if (playerSelection === 'rock' && computerSelection === 'paper'){
-        return "You lost! The computer chose Paper. \n Paper beats Rock";
+        return "You lost! The computer chose Paper. \n Paper beats Rock.";
         
     } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
-        return "You win! The computer chose Scissors. \n Rock beats Scissors";
+        return "You win! The computer chose Scissors. \n Rock beats Scissors.";
         
     } else if (playerSelection === 'rock' && computerSelection === 'rock'){
-        return "Draw! The computer chose Rock. \n Rock and Rock are friends";
+        return "Draw! The computer chose Rock. \n Rock and Rock are friends.";
+    } else {
+        return
     }
+}
+
+function playRound(playerSelection, computerSelection){
+    return rockResult(playerSelection, computerSelection);
+
 }
 
 function game(){
@@ -29,7 +36,7 @@ function game(){
         computerSelection = getComputerChoice();
         playerSelection = prompt("Choose your move: ");
     if (playerSelection.toLowerCase() === 'rock' || 'paper' || 'scissors') {
-        playRound(playerSelection, computerSelection);
+        console.log(playRound(playerSelection, computerSelection));
     }
     else {
         console.log("I don't recognize that move");
@@ -40,5 +47,6 @@ function game(){
 }
 let computerSelection = getComputerChoice();
 let playerSelection = 'rock';
+game();
 
 
