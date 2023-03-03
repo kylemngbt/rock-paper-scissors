@@ -16,11 +16,10 @@ function playRound(playerSelection, computerSelection){
         return "You lost! The computer chose Paper. \n Paper beats Rock";
         
     } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
-        console.log("You win! The computer chose Scissors. \n Rock beats Scissors");
-        return true;
+        return "You win! The computer chose Scissors. \n Rock beats Scissors";
+        
     } else if (playerSelection === 'rock' && computerSelection === 'rock'){
-        console.log("Draw! The computer chose Rock. \n Rock and Rock are friends");
-        return false;
+        return "Draw! The computer chose Rock. \n Rock and Rock are friends";
     }
 }
 
