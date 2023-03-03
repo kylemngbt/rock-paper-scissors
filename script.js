@@ -13,9 +13,11 @@ function getComputerChoice(){
 
 function rockResult(playerSelection, computerSelection){
     if (playerSelection === 'rock' && computerSelection === 'paper'){
+        computerScore + 1
         return "You lost! The computer chose Paper. \n Paper beats Rock.";
         
     } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
+        playerScore + 1
         return "You win! The computer chose Scissors. \n Rock beats Scissors.";
         
     } else if (playerSelection === 'rock' && computerSelection === 'rock'){
@@ -27,12 +29,14 @@ function rockResult(playerSelection, computerSelection){
 
 function paperResult(playerSelection, computerSelection){
     if (playerSelection === 'paper' && computerSelection === 'rock'){
+        playerScore + 1
         return "You win! The computer chose Rock. \n Paper beats Rock.";
         
     } else if (playerSelection === 'paper' && computerSelection === 'paper'){
         return "Draw! The computer chose Paper. \n Paper and Paper are friends.";
         
     } else if (playerSelection === 'paper' && computerSelection === 'scissors'){
+        computerScore + 1
         return "You lost! The computer chose Scissors. \n Scissors beats Paper.";
     } else {
         return
@@ -41,9 +45,11 @@ function paperResult(playerSelection, computerSelection){
 
 function scissorsResult(playerSelection, computerSelection){
     if (playerSelection === 'scissors' && computerSelection === 'rock'){
+        computerScore + 1
         return "You lost! The computer chose Rock. \n Rock beats Scissors.";
         
     } else if (playerSelection === 'scissors' && computerSelection === 'paper'){
+        playerScore + 1
         return "You won! The computer chose Paper. \n Scissors beats Paper.";
         
     } else if (playerSelection === 'scissors' && computerSelection === 'scissors'){
@@ -62,15 +68,18 @@ function playRound(playerSelection, computerSelection){
     }
     else if (playerSelection === 'scissors'){
         return scissorsResult(playerSelection, computerSelection);
+    } else {
+        return
     }
 }
 
 function game(){
     
     for (let i = 0; i < 5; i++) {
-        computerSelection = getComputerChoice();
-        playerSelection = prompt("Choose your move: ");
-    if (playerSelection.toLowerCase() === 'rock' || 'paper' || 'scissors') {
+    computerSelection = getComputerChoice();
+    playerSelection = prompt("Choose your move: ");
+    playerSelection.toLowerCase();
+    if (playerSelection === 'rock' || 'paper' || 'scissors') {
         console.log(playRound(playerSelection, computerSelection));
     }
     else {
@@ -82,6 +91,10 @@ function game(){
 }
 let computerSelection = getComputerChoice();
 let playerSelection = 'rock';
+const playerScore = 0;
+const computerScore = 0;
 game();
+console.log(playerScore);
+console.log(computerScore);
 
 
