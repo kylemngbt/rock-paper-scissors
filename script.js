@@ -25,6 +25,20 @@ function rockResult(playerSelection, computerSelection){
     }
 }
 
+function paperResult(playerSelection, computerSelection){
+    if (playerSelection === 'paper' && computerSelection === 'rock'){
+        return "You win! The computer chose Rock. \n Paper beats Rock.";
+        
+    } else if (playerSelection === 'paper' && computerSelection === 'paper'){
+        return "Draw! The computer chose Paper. \n Paper and Paper are friends.";
+        
+    } else if (playerSelection === 'paper' && computerSelection === 'scissors'){
+        return "You lost! The computer chose Scissors. \n Scissors beats Paper.";
+    } else {
+        return
+    }
+}
+
 function playRound(playerSelection, computerSelection){
     return rockResult(playerSelection, computerSelection);
 
