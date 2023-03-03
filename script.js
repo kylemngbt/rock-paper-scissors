@@ -39,9 +39,30 @@ function paperResult(playerSelection, computerSelection){
     }
 }
 
-function playRound(playerSelection, computerSelection){
-    return rockResult(playerSelection, computerSelection);
+function scissorsResult(playerSelection, computerSelection){
+    if (playerSelection === 'scissors' && computerSelection === 'rock'){
+        return "You lost! The computer chose Rock. \n Rock beats Scissors.";
+        
+    } else if (playerSelection === 'scissors' && computerSelection === 'paper'){
+        return "You won! The computer chose Paper. \n Scissors beats Paper.";
+        
+    } else if (playerSelection === 'scissors' && computerSelection === 'scissors'){
+        return "It's a draw! The computer chose Scissors. \n All scissors are friends.";
+    } else {
+        return
+    }
+}
 
+function playRound(playerSelection, computerSelection){
+    if (playerSelection === 'rock'){
+        return rockResult(playerSelection, computerSelection);
+    }
+    else if (playerSelection === 'paper'){
+        return paperResult(playerSelection, computerSelection);
+    }
+    else if (playerSelection === 'scissors'){
+        return scissorsResult(playerSelection, computerSelection);
+    }
 }
 
 function game(){
