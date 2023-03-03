@@ -1,5 +1,14 @@
 function getComputerChoice(){
-    return Math.floor((Math.random() * 3) + 1);
+    computerMove = Math.floor((Math.random() * 3) + 1);
+    if (computerMove === 1){
+        return 'rock';
+    }
+    else if (computerMove === 2){
+        return 'paper';
+    }
+    else if (computerMove === 3){
+        return 'scissors';
+    }
 }
 
 function turnNumberToString(value){
@@ -18,11 +27,14 @@ function playRound(playerSelection, computerSelection){
     computerSelection = turnNumberToString(computerSelection);
     console.log(computerSelection);
     if (playerSelection === 'rock' && computerSelection === 'paper'){
-        console.log("You lost! The computer chose Paper. \n Paper beats Rock");  
+        console.log("You lost! The computer chose Paper. \n Paper beats Rock");
+        return false;  
     } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
         console.log("You win! The computer chose Scissors. \n Rock beats Scissors");
+        return true;
     } else if (playerSelection === 'rock' && computerSelection === 'rock'){
         console.log("Draw! The computer chose Rock. \n Rock and Rock are friends");
+        return false;
     }
 }
 
@@ -43,6 +55,5 @@ function game(){
 }
 let computerSelection = getComputerChoice();
 let playerSelection = 'rock';
-game();
 
 
