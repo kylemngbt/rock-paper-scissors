@@ -9,49 +9,49 @@
 
         <script>
             function getComputerChoice() {
-                let randomNumber = Math.floor(Math.random() * 3 + 1);
-                switch (randomNumber) {
-                    case 1:
-                        return 'rock';
-                        break;
+              let randomNumber = Math.floor(Math.random() * 3 + 1);
+              switch (randomNumber) {
+                case 1:
+                return 'rock';
+                break;
 
-                    case 2:
-                        return 'paper';
-                        break;
+                case 2:
+                return 'paper';
+                break;
 
-                    case 3:
-                        return 'scissors';
-                        break;
+                case 3:
+                return 'scissors';
+                break;
                 }
             }
 
             function playRound(playerSelection, computerSelection) {
-                playerSelection = playerSelection.toLowerCase();
-                if (playerSelection === "rock") {
-                    if (computerSelection === "rock") {
-                        return "The computer chose Rock. It's a tie."
-                    } else if (computerSelection === "paper") {
-                        return "The computer chose Paper. You lose."
-                    } else if (computerSelection === "scissors") {
-                        return "The computer chose Scissors. You win"
-                    }
-                } else if (playerSelection === "paper") {
-                    if (computerSelection === "rock") {
-                        return "The computer chose Rock. You win"
-                    } else if (computerSelection === "paper") {
-                        return "The computer chose Paper. It's a tie."
-                    } else if (computerSelection === "scissors") {
-                        return "The computer chose Scissors. You lose."
-                    }
-                } else if (playerSelection === "scissors") {
-                    if (computerSelection === "rock") {
-                        return "The computer chose Rock. You lose."
-                    } else if (computerSelection === "paper") {
-                        return "The computer chose Paper. You win."
-                    } else if (computerSelection === "scissors") {
-                        return "The computer chose Scissors. It's a tie."
-                    }
+              playerSelection = playerSelection.toLowerCase();
+              if (playerSelection === "rock") {
+                if (computerSelection === "rock") {
+                  return "The computer chose Rock. It's a tie."
+                } else if (computerSelection === "paper") {
+                  return "The computer chose Paper. You lose."
+                } else if (computerSelection === "scissors") {
+                  return "The computer chose Scissors. You win"
                 }
+              } else if (playerSelection === "paper") {
+                if (computerSelection === "rock") {
+                  return "The computer chose Rock. You win"
+                } else if (computerSelection === "paper") {
+                  return "The computer chose Paper. It's a tie."
+                } else if (computerSelection === "scissors") {
+                  return "The computer chose Scissors. You lose."
+                }
+              } else if (playerSelection === "scissors") {
+                if (computerSelection === "rock") {
+                  return "The computer chose Rock. You lose."
+                } else if (computerSelection === "paper") {
+                  return "The computer chose Paper. You win."
+                } else if (computerSelection === "scissors") {
+                  return "The computer chose Scissors. It's a tie."
+                }
+              }
             }
         </script>
     </body>
