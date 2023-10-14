@@ -62,8 +62,9 @@ function updateScore() {
   computerScoreResult.textContent = `Computer Score: ${computerScore}`
 }
 
-function rock() {
+function gameRock() {
   playRock();
+  updateScore();
   checkScore();
 }
 
