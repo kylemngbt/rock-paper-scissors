@@ -29,3 +29,4 @@ function playRock() {
 }
 
 const rock = document.querySelector('#rock');
+const result = document.querySelector('.result');
