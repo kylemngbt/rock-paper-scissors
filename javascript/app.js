@@ -94,6 +94,12 @@ function gameRock() {
   checkScore();
 }
 
+function gamePaper() {
+  playPaper();
+  updateScore();
+  checkScore();
+}
+
 
 
 
