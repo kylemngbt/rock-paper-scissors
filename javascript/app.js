@@ -70,13 +70,17 @@ const computerScoreResult = document.querySelector('.computerScore');
 function checkScore() {
   if (playerScore === 5) {
     result.textContent = 'Game over. The player won the game by 5 points!'
-    rock.removeEventListener('click');
+    rock.removeEventListener('click', gameRock);
+    paper.removeEventListener('click', gamePaper);
+    scissors.removeEventListener('click', gameScissors);
     const playAgainButton = document.createElement('button');
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
   } else if (computerScore === 5) {
     result.textContent = 'Game over. The computer won the game by 5 points!'
-    rock.removeEventListener('click');
+    rock.removeEventListener('click', gameRock);
+    paper.removeEventListener('click', gamePaper);
+    scissors.removeEventListener('click', gameScissors);
     const playAgainButton = document.createElement('button');
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
