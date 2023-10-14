@@ -66,6 +66,7 @@ const resultBox = document.querySelector('.resultBox');
 const scoreBox = document.querySelector('.scoreBox');
 const playerScoreResult = document.querySelector('.playerScore');
 const computerScoreResult = document.querySelector('.computerScore');
+const playAgainButton = document.createElement('button');
 
 function checkScore() {
   if (playerScore === 5) {
@@ -73,7 +74,6 @@ function checkScore() {
     rock.removeEventListener('click', gameRock);
     paper.removeEventListener('click', gamePaper);
     scissors.removeEventListener('click', gameScissors);
-    const playAgainButton = document.createElement('button');
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
   } else if (computerScore === 5) {
@@ -81,7 +81,6 @@ function checkScore() {
     rock.removeEventListener('click', gameRock);
     paper.removeEventListener('click', gamePaper);
     scissors.removeEventListener('click', gameScissors);
-    const playAgainButton = document.createElement('button');
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
   } else {
