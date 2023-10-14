@@ -57,5 +57,11 @@ function checkScore() {
   }
 }
 
+function rock() {
+  playRock();
+  checkScore();
+}
+
+
 
 
