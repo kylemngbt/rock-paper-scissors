@@ -20,11 +20,13 @@ let computerSelection;
 function playRock() {
   computerSelection = getComputerChoice();
     if (computerSelection === "rock") {
-      return "The computer chose Rock. It's a tie."
+      result.textContent = 'The computer chose Rock. It\'s a tie.'
     } else if (computerSelection === "paper") {
-      return "The computer chose Paper. You lose."
+      computerScore += 1;
+      result.textContent = 'The computer chose Paper. You lose.'
     } else if (computerSelection === "scissors") {
-      return "The computer chose Scissors. You win."
+      playerScore += 1;
+      result.textContent = 'The computer chose Scissors. You win.'
     }
 }
 
