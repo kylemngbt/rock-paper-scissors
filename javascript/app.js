@@ -100,6 +100,12 @@ function gamePaper() {
   checkScore();
 }
 
+function gameScissors() {
+  playScissors();
+  updateScore();
+  checkScore();
+}
+
 
 
 
