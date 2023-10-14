@@ -59,6 +59,8 @@ function playScissors() {
 }
 
 const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
 const result = document.querySelector('.result');
 const resultBox = document.querySelector('.resultBox');
 const scoreBox = document.querySelector('.scoreBox');
@@ -105,6 +107,7 @@ function gameScissors() {
   updateScore();
   checkScore();
 }
+
 
 
 
