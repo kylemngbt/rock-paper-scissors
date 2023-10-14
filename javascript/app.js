@@ -85,9 +85,7 @@ function checkScore() {
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
     playAgainButton.addEventListener('click', resetGame);
-  } else {
-    console.log('Continue the game.')
-  }
+  } 
 }
 
 function updateScore() {
