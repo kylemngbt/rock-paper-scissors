@@ -108,6 +108,10 @@ function gameScissors() {
   checkScore();
 }
 
+rock.addEventListener('click', gameRock);
+paper.addEventListener('click', gamePaper);
+scissors.addEventListener('click', gameScissors);
+
 
 
 
