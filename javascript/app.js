@@ -15,32 +15,14 @@ function getComputerChoice() {
   }
 }
 
-function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
-    if (playerSelection === "rock") {
-      if (computerSelection === "rock") {
-        return "The computer chose Rock. It's a tie."
-      } else if (computerSelection === "paper") {
-        return "The computer chose Paper. You lose."
-      } else if (computerSelection === "scissors") {
-        return "The computer chose Scissors. You win."
-      }
-    } else if (playerSelection === "paper") {
-      if (computerSelection === "rock") {
-        return "The computer chose Rock. You win."
-      } else if (computerSelection === "paper") {
-        return "The computer chose Paper. It's a tie."
-      } else if (computerSelection === "scissors") {
-        return "The computer chose Scissors. You lose."
-      }
-    } else if (playerSelection === "scissors") {
-      if (computerSelection === "rock") {
-        return "The computer chose Rock. You lose."
-      } else if (computerSelection === "paper") {
-        return "The computer chose Paper. You win."
-      } else if (computerSelection === "scissors") {
-        return "The computer chose Scissors. It's a tie."
-      }
+function playRock() {
+  let computerSelection = getComputerChoice();
+    if (computerSelection === "rock") {
+      return "The computer chose Rock. It's a tie."
+    } else if (computerSelection === "paper") {
+      return "The computer chose Paper. You lose."
+    } else if (computerSelection === "scissors") {
+      return "The computer chose Scissors. You win."
     }
 }
 
