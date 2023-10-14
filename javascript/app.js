@@ -16,6 +16,8 @@ function getComputerChoice() {
 }
 
 let computerSelection;
+let playerScore = 0;
+let computerScore = 0;
 
 function playRock() {
   computerSelection = getComputerChoice();
