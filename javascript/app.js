@@ -116,6 +116,19 @@ rock.addEventListener('click', gameRock);
 paper.addEventListener('click', gamePaper);
 scissors.addEventListener('click', gameScissors);
 
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  result.textContent = '';
+  playerScoreResult.textContent = '';
+  computerScoreResult.textContent = '';
+  rock.addEventListener('click', gameRock);
+  paper.addEventListener('click', gamePaper);
+  scissors.addEventListener('click', gameScissors);
+  playAgainButton.remove();
+  
+}
+
 
 
 
