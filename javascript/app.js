@@ -15,8 +15,10 @@ function getComputerChoice() {
   }
 }
 
+let computerSelection;
+
 function playRock() {
-  let computerSelection = getComputerChoice();
+  computerSelection = getComputerChoice();
     if (computerSelection === "rock") {
       return "The computer chose Rock. It's a tie."
     } else if (computerSelection === "paper") {
