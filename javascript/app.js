@@ -45,6 +45,19 @@ function playPaper() {
     }
 }
 
+function playScissors() {
+  computerSelection = getComputerChoice();
+    if (computerSelection === "rock") {
+      computerScore += 1;
+      result.textContent = "The computer chose Rock. You lose."
+    } else if (computerSelection === "paper") {
+      playerScore += 1;
+      result.textContent = "The computer chose Paper. You win."
+    } else if (computerSelection === "scissors") {
+      result.textContent = "The computer chose Scissors. It's a tie."
+    }
+}
+
 const rock = document.querySelector('#rock');
 const result = document.querySelector('.result');
 const resultBox = document.querySelector('.resultBox');
