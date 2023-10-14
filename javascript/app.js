@@ -37,3 +37,24 @@ const result = document.querySelector('.result');
 const resultBox = document.querySelector('.resultBox');
 const playerScoreResult = document.querySelector('.playerScore');
 const computerScoreResult = document.querySelector('.computerScore');
+
+function checkScore() {
+  if (playerScore === 5) {
+    result.textContent = 'Game over. The player won the game by 5 points!'
+    rock.removeEventListener('click');
+    const playAgainButton = document.createElement('button');
+    playAgainButton.textContent = 'Play again';
+    scoreBox.appendChild(playAgainButton);
+  } else if (computerScore === 5) {
+    result.textContent = 'Game over. The computer won the game by 5 points!'
+    rock.removeEventListener('click');
+    const playAgainButton = document.createElement('button');
+    playAgainButton.textContent = 'Play again';
+    scoreBox.appendChild(playAgainButton);
+  } else {
+    console.log('Continue the game.')
+  }
+}
+
+
+
