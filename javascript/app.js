@@ -35,6 +35,7 @@ function playRock() {
 const rock = document.querySelector('#rock');
 const result = document.querySelector('.result');
 const resultBox = document.querySelector('.resultBox');
+const scoreBox = document.querySelector('.scoreBox');
 const playerScoreResult = document.querySelector('.playerScore');
 const computerScoreResult = document.querySelector('.computerScore');
 
