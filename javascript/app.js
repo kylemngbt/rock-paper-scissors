@@ -43,3 +43,5 @@ function playRound(playerSelection, computerSelection) {
       }
     }
 }
+
+const rock = document.querySelector('#rock');
