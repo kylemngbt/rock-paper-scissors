@@ -76,6 +76,7 @@ function checkScore() {
     scissors.removeEventListener('click', gameScissors);
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
+    playAgainButton.addEventListener('click', resetGame);
   } else if (computerScore === 5) {
     result.textContent = 'Game over. The computer won the game by 5 points!'
     rock.removeEventListener('click', gameRock);
@@ -83,6 +84,7 @@ function checkScore() {
     scissors.removeEventListener('click', gameScissors);
     playAgainButton.textContent = 'Play again';
     scoreBox.appendChild(playAgainButton);
+    playAgainButton.addEventListener('click', resetGame);
   } else {
     console.log('Continue the game.')
   }
