@@ -12,3 +12,15 @@ function getComputerChoice() {
     return "scissors"
   }
 }
+
+function getHumanChoice() {
+  let humanChoice = prompt('Choose a move: (Rock, Paper or Scissors)');
+  humanChoice = humanChoice.toLowerCase();
+  if (humanChoice == 'rock') {
+    return 'rock'
+  } else if (humanChoice == 'paper') {
+    return 'paper'
+  } else if (humanChoice == 'scissors') {
+    return 'scissors'
+  }
+}
