@@ -3,10 +3,10 @@ function random(number) {
 }
 
 function getComputerChoice() {
-  let randomNumber = random(3);
-  if (randomNumber == 1) {
+  let computerChoice = random(3);
+  if (computerChoice == 1) {
     return "rock"
-  } else if (randomNumber == 2) {
+  } else if (computerChoice == 2) {
     return "paper"
   } else {
     return "scissors"
