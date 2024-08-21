@@ -74,3 +74,4 @@ function playRound(humanChoice,computerChoice) {
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
+const resultBox = document.querySelector('.result-box');
