@@ -71,52 +71,6 @@ function playRound(humanChoice,computerChoice) {
   }
 }
 
-
-// function playGame() {
-//   let humanScore = 0;
-//   let computerScore = 0;
-
-//   humanChoice = getHumanChoice();
-//   computerChoice = getComputerChoice();
-//   playRound(humanChoice,computerChoice);
-
-//   humanChoice = getHumanChoice();
-//   computerChoice = getComputerChoice();
-//   playRound(humanChoice,computerChoice);
-
-//   humanChoice = getHumanChoice();
-//   computerChoice = getComputerChoice();
-//   playRound(humanChoice,computerChoice);
-
-//   humanChoice = getHumanChoice();
-//   computerChoice = getComputerChoice();
-//   playRound(humanChoice,computerChoice);
-
-//   humanChoice = getHumanChoice();
-//   computerChoice = getComputerChoice();
-//   playRound(humanChoice,computerChoice);
-  
-// }
-
-
-// WITH LOOP
-
-// function playGame() {
-//   humanScore = 0;
-//   computerScore = 0;
-//   while (humanScore <= 5 || computerScore <= 5) {
-//     playRound(getHumanChoice(), getComputerChoice());
-//     console.log(`Your score: ${humanScore}`)
-//     console.log(`Bot score: ${computerScore}`)
-//   }
-//   if (humanScore > computerScore) {
-//     console.log(`You won the game.`)
-//   } else {
-//     console.log(`You lost the game.`)
-//   }
-//   console.log(`Your score: ${humanScore}`)
-//   console.log(`Bot score: ${computerScore}`)
-// }
-
-// let humanScore;
-// let computerScore;
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
