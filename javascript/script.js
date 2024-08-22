@@ -91,6 +91,14 @@ function playRound() {
   }
 }
 
+function isGameOver () {
+  if (humanScore == 5 || computerScore == 5) {
+    return true
+  } else {
+    return false
+  }
+}
+
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
@@ -99,3 +107,7 @@ const humanScoreBox = document.querySelector('.human-score-box');
 const computerScoreBox = document.querySelector('.computer-score-box');
 let humanScore = 0;
 let computerScore = 0;
+
+rock.addEventListener('click', playRound);
+paper.addEventListener('click', playRound);
+scissors.addEventListener('click', playRound);
