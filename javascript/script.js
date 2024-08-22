@@ -32,48 +32,48 @@ function playRound() {
     case (humanChoice == 'rock' && computerChoice == 'rock'):
       resultBox.textContent = 'No one won. Rock and rock is a tie.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
     
     case (humanChoice == 'rock' && computerChoice == 'paper'):
       computerScore++;
       resultBox.textContent = 'You lose! Paper beats Rock.'
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'rock' && computerChoice == 'scissors'):
       humanScore++;
       resultBox.textContent = 'You win! Rock beats Scissors.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'rock'):
       humanScore++;
       resultBox.textContent = 'You win! Paper beats Rock.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'paper'):
       resultBox.textContent = 'No one won. Paper and paper is a tie.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'scissors'):
       computerScore++;
       resultBox.textContent = 'You lose! Scissors beats Paper.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'scissors' && computerChoice == 'rock'):
       computerScore++;
       resultBox.textContent = 'You lose! Rock beats Scissors.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
 
     case (humanChoice == 'scissors' && computerChoice == 'paper'):
@@ -86,7 +86,7 @@ function playRound() {
     case (humanChoice == 'scissors' && computerChoice == 'scissors'):
       resultBox.textContent = 'No one won. Scissors and scissors is a tie.';
       humanScoreBox.textContent = `Your score: ${humanScore}`;
-      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
+      computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
   }
 }
