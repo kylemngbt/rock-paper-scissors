@@ -25,48 +25,68 @@ function getHumanChoice() {
   }
 }
 
-function playRound(humanChoice,computerChoice) {
+function playRound() {
+  let humanChoice = this.id;
+  let computerChoice = getComputerChoice();
   switch (true) {
     case (humanChoice == 'rock' && computerChoice == 'rock'):
-      console.log('No one won. Rock and rock is a tie.');
+      resultBox.textContent = 'No one won. Rock and rock is a tie.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
     
     case (humanChoice == 'rock' && computerChoice == 'paper'):
-      console.log('You lose! Paper beats Rock.')
       computerScore++;
+      resultBox.textContent = 'You lose! Paper beats Rock.'
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'rock' && computerChoice == 'scissors'):
-      console.log('You win! Rock beats Scissors.');
       humanScore++;
+      resultBox.textContent = 'You win! Rock beats Scissors.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'rock'):
-      console.log('You win! Paper beats Rock.');
       humanScore++;
+      resultBox.textContent = 'You win! Paper beats Rock.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'paper'):
-      console.log('No one won. Paper and paper is a tie.')
+      resultBox.textContent = 'No one won. Paper and paper is a tie.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'paper' && computerChoice == 'scissors'):
-      console.log('You lose! Scissors beats Paper.');
       computerScore++;
+      resultBox.textContent = 'You lose! Scissors beats Paper.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'scissors' && computerChoice == 'rock'):
-      console.log('You lose! Rock beats Scissors.');
       computerScore++;
+      resultBox.textContent = 'You lose! Rock beats Scissors.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
 
     case (humanChoice == 'scissors' && computerChoice == 'paper'):
-      console.log('You win! Scissors beats Paper.');
       humanScore++;
+      resultBox.textContent = 'You win! Scissors beats Paper.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
     
     case (humanChoice == 'scissors' && computerChoice == 'scissors'):
-      console.log('No one won. Scissors and scissors is a tie.');
+      resultBox.textContent = 'No one won. Scissors and scissors is a tie.';
+      humanScoreBox.textContent = `Your score: ${humanScore}`;
+      computerScoreBox.textContent = `Computer Score: ${computerScore}`;
       break;
   }
 }
