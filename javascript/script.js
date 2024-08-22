@@ -89,6 +89,9 @@ function playRound() {
       computerScoreBox.textContent = `Computer score: ${computerScore}`;
       break;
   }
+  if (isGameOver()) {
+    setGameOver();
+  }
 }
 
 function isGameOver () {
