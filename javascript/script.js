@@ -75,5 +75,7 @@ const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 const resultBox = document.querySelector('.result-box');
+const humanScoreBox = document.querySelector('.human-score-box');
+const computerScoreBox = document.querySelector('.computer-score-box');
 let humanScore = 0;
 let computerScore = 0;
