@@ -99,6 +99,23 @@ function isGameOver () {
   }
 }
 
+function setGameOver () {
+  if (humanScore > computerScore) {
+    alert(`Game over. You win against the computer. \n
+      Your score: ${humanScore} \n
+      Computer score: ${computerScore}`);
+  } else {
+    alert(`Game over. Computer won against you. \n
+      Your score: ${humanScore} \n
+      Computer score: ${computerScore}`);
+  }
+  resultBox.textContent = '';
+  humanScoreBox.textContent = '';
+  computerScoreBox.textContent = '';
+  humanScore = 0;
+  computerScore = 0;
+}
+
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
